@@ -1,0 +1,39 @@
+body {
+  background: #000;
+}
+
+.snow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.snow .flake {
+  position: absolute;
+  top: -10px;
+  width: 5px;
+  height: 5px;
+  background: #fff;
+  border-radius: 50%;
+  animation: fall 10s linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+.snow-pile {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background: #fff;
+}
